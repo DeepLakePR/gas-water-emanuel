@@ -1,0 +1,368 @@
+/************************/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    appearance: none;
+    font-family: 'Lato', sans-serif;
+}
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul{
+    list-style-type: none;
+}
+
+input:focus{
+    outline: none;
+}
+
+img{
+    width: 100%;
+}
+
+/************************/
+/* Header */
+header{
+    background-color: #1c1b3b;
+}
+
+header .container{
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    max-width: 11%;
+}
+
+header nav ul{
+    display: flex;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 25px;
+    margin: 0 15px;
+    font-weight: 300;
+    letter-spacing: 1.1px;
+}
+
+/************************/
+/* Carrousel */
+section.promotions-carrousel .container{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+section.promotions-carrousel .glide__bullets{
+    margin-top: 10px;
+    text-align: center;
+}
+
+section.promotions-carrousel .glide__bullets button{
+    margin: 0 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: none;
+    background: #1c1b3b;
+    box-shadow: 0 2px 9px 2px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+}
+
+section.promotions-carrousel .glide__bullets button:hover{
+    background: #3d3b7c;
+}
+
+/************************/
+/* Products */
+section.products{
+    padding: 25px;
+}
+
+section.products .container{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section.products .container > h2{
+    width: 100%;
+    font-weight: 300;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 1.1px;
+    margin-bottom: 30px;
+}
+
+.products-wrapper{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.products-single{
+    width: 31%;
+    text-align: center;
+    max-height: 350px;
+    border-radius: 7px;
+    box-shadow: 0 4px 15px 2px rgba(0, 0, 0, 0.25); 
+    padding: 15px;
+}
+
+.products-single img{
+    width: 50%;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.products-single h2 span{
+    margin-bottom: 10px;
+    color: #1c1b3b;
+    font-size: 35px;
+    font-weight: 800;
+    padding: 0 12px;
+}
+
+.products-single h2{
+    font-size: 28px;
+    font-weight: 300;
+}
+
+/************************/
+/* Contact */
+section.contact{
+    padding: 25px;
+}
+
+section.contact .container{
+    text-align: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+section.contact h2{
+    width: 100%;
+    font-size: 40px;
+    font-weight: 300;
+    letter-spacing: 1.1px;
+    margin-bottom: 15px;
+}
+
+section.contact .contact-wrapper{
+    width: 100%;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-wrapper .contact-single{
+    width: 32%;
+    background-color: #2a295a;
+    padding: 30px;
+    border-radius: 6px;
+    color: white;
+    font-size: 22px;
+    font-weight: 300;
+    transition: all 0.25s ease-in-out;
+}
+
+.contact-wrapper .contact-single i{
+    font-size: 32px;
+    margin-bottom: 7px;
+}
+
+.contact-wrapper .contact-single:last-child{
+    width: 100%;
+}
+
+.contact-wrapper .contact-single:hover{
+    background-color: #1c1b3b;
+    color: #9c9c9c;
+}
+
+/************************/
+/* Fixed Info */
+div.fixed-info{
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 15px;
+}
+
+div.site-developer{
+    opacity: 0.6;
+}
+
+div.site-developer p{
+    letter-spacing: 1.1px;
+    color: #696969;
+}
+
+div.site-developer p a{
+    text-decoration: underline;
+    font-weight: 800;
+    color: #696969;
+    transition: all 0.25s ease-in-out;
+}
+
+div.site-developer p a:hover{
+    color: #414141;
+}
+
+div.fixed-info .whatsapp-button a{
+    transition: all 0.25s ease-in-out;
+    font-size: 45px;
+    color: #0dc042;
+
+}
+
+div.fixed-info .whatsapp-button a:hover{
+    color: #0b8b31;
+}
+
+/************************/
+/* Footer */
+footer{
+    background: #1c1b3b;
+    padding: 15px;
+    color: white;
+}
+
+footer .container{
+    text-align: center;
+}
+
+footer .container p{
+    width: 100%;
+    line-height: 25px;
+    letter-spacing: 1.1px;
+    font-weight: 400;
+}
+
+footer .container p a{
+    color: white;
+}
+
+footer .container p b{
+    font-weight: 900;
+}
+
+/************************/
+/* Responsive */
+@media screen and (max-width: 768px){
+
+    /* Header */
+    header{
+        background-color: #1c1b3b;
+        padding-bottom: 30px;
+    }
+
+    header .container{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    header .logo{
+        max-width: 50%;
+    }
+
+    header nav ul{
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+        text-align: center;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+        margin: 0;
+    }
+
+    /************************/
+    /* Carrousel */
+    section.promotions-carrousel .container{
+        padding: 0;
+    }
+
+    /* Products */
+    .products-single{
+        width: 100%;
+        max-height: 350px;
+        padding: 15px;
+    }
+
+    .products-single img{
+        width: 75%;
+        max-height: 200px;
+    }
+
+    .products-single h2 span{
+        margin-bottom: 10px;
+        font-size: 31px;
+    }
+
+    .products-single h2{
+        font-size: 26px;
+    }
+
+    /* Contact */
+    section.contact h2{
+        font-size: 30px;
+    }
+
+    .contact-wrapper .contact-single{
+        width: 100%;
+    }
+
+    /* Fixed Info */
+    div.fixed-info{
+        padding: 10px;
+    }
+
+    div.site-developer{
+        opacity: 7.5;
+        padding-bottom: 7px;
+    }
+
+    div.site-developer p{
+        font-size: 13px;
+    }
+
+    div.fixed-info .whatsapp-button a{
+        font-size: 35px;
+    }
+
+    /* Footer */
+    footer{
+        padding-bottom: 45px;
+    }
+
+    footer .container p{
+        font-size: 14px;
+    }
+
+}
