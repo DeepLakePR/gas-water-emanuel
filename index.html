@@ -29,7 +29,7 @@
 
 <body>
 
-    <header>
+    <header class="header">
         <div class="container">
 
             <div class="logo">
@@ -38,9 +38,9 @@
 
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Produtos</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li scroll-target="header"><a href="#">Home</a></li>
+                    <li scroll-target="products"><a href="#">Produtos</a></li>
+                    <li scroll-target="contact"><a href="#">Contato</a></li>
                 </ul>
             </nav> <!-- Nav -->
 
@@ -238,6 +238,8 @@
             }
         }).mount()
     </script>
+
+    <script src="/public/js/home.js"></script>
 
 </body>
 
