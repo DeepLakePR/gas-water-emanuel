@@ -107,12 +107,18 @@ section.products .container{
     justify-content: center;
 }
 
-section.products .container > h2{
+section.products .container > h2,
+section.products .container > p{
     width: 100%;
     font-weight: 300;
     font-size: 30px;
     text-align: center;
     letter-spacing: 1.1px;
+}
+
+section.products .container > p{
+    font-size: 25px;
+    font-weight: 400;
     margin-bottom: 30px;
 }
 
@@ -352,6 +358,10 @@ footer .container p b{
     }
 
     /* Products */
+    section.products .container > p{
+        font-size: 20px;
+    }
+
     .products-single{
         width: 100%;
         max-height: 350px;
