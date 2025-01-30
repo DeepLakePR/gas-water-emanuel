@@ -70,6 +70,11 @@ section.promotions-carrousel .container{
     text-align: center;
 }
 
+section.promotions-carrousel .glide img{
+    height: 400px;
+    object-fit: cover;
+}
+
 section.promotions-carrousel .glide__bullets{
     margin-top: 10px;
     text-align: center;
@@ -339,6 +344,10 @@ footer .container p b{
     /* Carrousel */
     section.promotions-carrousel .container{
         padding: 0;
+    }
+
+    section.promotions-carrousel .glide img{
+        height: 275px;
     }
 
     /* Products */
